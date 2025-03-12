@@ -13,10 +13,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50">
     <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top pb-3 ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#d1"><b>EDGECUT</b></a>
+            <a class="navbar-brand text-info" href="#d1"><b>EDGECUT</b></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,185 +27,187 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav text-center" id="ultag">
                     <li class="nav-item">
-                        <a class="nav-link active " aria-current="page" href="">HOME</a>
+                        <a class="nav-link " aria-current="page" href="#demo">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="">ABOUT</a>
+                        <a class="nav-link" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="">FURNITURE</a>
+                        <a class="nav-link" href="#furniture">FURNITURE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="">BLOG</a>
+                        <a class="nav-link" href="#latest">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="">CONTACT US</a>
+                        <a class="nav-link" href="#contact">CONTACT US</a>
                     </li>
 
                 </ul>
             </div>
-            <a href="" class="hire">LOGIN</a> <i class="fa-solid fa-user ms-4"></i><i
+            <a href="" style="text-decoration: none;color:aqua;">LOGIN</a> <i class="fa-solid fa-user ms-4"></i><i
                 class="fa-solid fa-magnifying-glass ms-5"></i>
 
         </div>
     </nav>
 
     <!-- -------------------------------------------- -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- indicators(dots) -->
         <div class="carousel-indicators">
-          <button type="button"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active btn bg-dark" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" class="btn bg-dark" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" class="btn bg-dark" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" id="indi1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" id="indi2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2" id="indi3"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carousel-caption text-dark " id="box">
-                <h5 class="display-4"><b>FOR ALL YOUR <br> FURNITURE NEEDS</b></h5>
-                <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officiis qui quos dese <br>runt deleniti accusamus perspiciatis quod natus non? Saepe doloremque minus aut natus illo a ad earum alias eum?.</p>
-                <button class="btn1">Contact us</button>
-                <button class="btn2">About us</button>
-              </div>
-            <img id="sofa" src="./sofa2.webp" class="d-block" alt="...">
-           
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption text-dark"  id="box">
-                <h5><b>FOR ALL YOUR <br> FURNITURE NEEDS</b></h5>
-                <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officiis qui quos dese <br>runt deleniti accusamus perspiciatis quod natus non? Saepe doloremque minus aut natus illo a ad earum alias eum?.</p>
-                <button class="btn1">Contact us</button><button class="btn2">About us</button>
-                
-              </div>
-            <img src="./sofa2.webp" id="sofa" class="d-block" alt="...">
-            
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption text-dark"  id="box">
-                <h5 ><b>FOR ALL YOUR <br> FURNITURE NEEDS</b></h5>
-                <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officiis qui quos dese <br>runt deleniti accusamus perspiciatis quod natus non? Saepe doloremque minus aut natus illo a ad earum alias eum?.</p>
-                <button class="btn1 ">Contact us</button>
-                <button class="btn2">About us</button>
-              </div>
-            <img id="sofa" src="./sofa2.webp" class="d-block " alt="...">
-           
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <!-- slides -->
+         <div class="carousel-inner container">
+                <div class="carousel-item active p-5 mt-5">
+                        <img src="images/img1.avif" alt="slide1" class="w-50 d-flex ms-auto">
+                        <div id="text" class="carousel-caption text-dark position-absolute top-0 mt-5 text-start start-0 ms-5">
+                                <h1><b>FOR ALL YOUR <br> FURNITURE NEEDS</b></h1> <br>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Deleniti non veniam commodi atque in, soluta recusandae <br>
+                                     quasi quod odio adipisci mollitia? Qui magnam quas ab ullam, <br> vitae sed minima quod!</p>
+                             <div>
+                                <button class="btn text-light  p-2" style="background-color: orange;width:15%;">Contact Us</button>
+                                <button class="btn text-light  p-2" style="background-color: aqua; width:15%;">About Us</button>
+                             </div>
+                                     
+                        </div>
+                </div>
+                <div class="carousel-item p-5 mt-5">
+                    <img src="images/img1.avif" alt="slide2" class=" w-50 d-flex ms-auto">
+                    <div id="text" class="carousel-caption text-dark position-absolute top-0 mt-5 text-start start-0 ms-5">
+                            <h1>FOR ALL YOUR<br> FURNITURE NEEDS</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Deleniti non veniam commodi atque in, soluta recusandae <br>
+                                 quasi quod odio adipisci mollitia? Qui magnam quas ab ullam, <br> vitae sed minima quod!</p>
+                    <div>
+                        <button class="btn text-light  p-2" style="background-color: orange;width:15%;">Contact Us</button>
+                        <button class="btn text-light  p-2" style="background-color: aqua;width:15%;">About Us</button>
+                    </div>
+                                </div>
+            </div>
+            <div class="carousel-item p-5 mt-5">
+                <img src="images/img1.avif" alt="slide2" class="w-50 d-flex ms-auto">
+                <div id="text" class="carousel-caption text-dark position-absolute top-0 mt-5 text-start start-0 ms-5">
+                        <h1>FOR ALL YOUR<br> FURNITURE NEEDS</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Deleniti non veniam commodi atque in, soluta recusandae <br>
+                             quasi quod odio adipisci mollitia? Qui magnam quas ab ullam, <br> vitae sed minima quod!</p>
+                <div>
+                    <button class="btn text-light w-25 p-2" style="background-color: orange;width:15%;">Contact Us</button>
+                    <button class="btn text-light w-25 p-2" style="background-color: aqua;width:15%;">About Us</button>
+                </div>
+                    </div>
+            </div>
+         </div>
+         <!-- navigation button -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+
+        <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
         </button>
-      </div>
-
-
+    </div>
 
 
 <br><br><br>
 <!-- -------------------------------------------- -->
 
 
-<div id="d1">
-    <h1>OUR FURNITURE</h1>
-    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos veritatis non recusandae ab magni exercitationem amet fuga quo enim ut minus provident aliquam, eaque officia accusamus fugiat. Repellat, consequuntur maxime?</span>
-   <br><br>
-    <div class="row ">
-
-        <div class="col-4 d-flex justify-content-center ">
-            <div class="card w-75">
-                <img src="./single.jpg" alt="" class="card-img-top" width="200px" height="150px">
+<div class="container" id="furniture">
+    <h1><b>OUR FURNITURE</b></h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi animi magnam, quo voluptate recusandae error dicta quas perferendis unde dolores iure doloribus.</p>
+    <div class="row mt-5">
+        <div class="col-4 ">
+            <div class="card container border shadow">
+                <img src="./images/single.jpg" alt="" width="50%" height="300px" class="card-img-top mt-2">
                 <div class="card-body">
-                    <span class="card-text">brown chair design</span>
-                    <a href="" class="card-link">buy now</a>
+                    <h4 class="card-title"> BROWN CHAIR DESIGN</h4>
+                    <span class="card-text">$ 100.00</span>
+                    <a href="" class="card-link position-absolute end-0 me-4" style="text-decoration: none;color: skyblue;">BUY NOW</a>
                 </div>
             </div>
         </div>
-
-        <div class="col-4 d-flex justify-content-center">
-            <div class="card w-75">
-                <img src="./bed.jpg" alt="" class="card-img-top" width="200px" height="150px">
+        <div class="col-4">
+            <div class="card container border shadow">
+            <img src="./images/bed.png" alt="" width="50%"  height="300px" class="card-img-top mt-2 ">
+            <div class="card-body">
+                <h4 class="card-title">DOUBLE BED DESIGN</h4>
+                <span class="card-text">$ 200.00</span>
+                <a href="" class="card-link position-absolute end-0 me-4" style="text-decoration: none;color: skyblue;">BUY NOW</a>
+            </div>
+        </div>
+    </div>
+        <div class="col-4">
+            <div class="card container border shadow" >
+                <img src="./images/chair.jpeg" alt="" width="50%" height="300px" class="card-img-top mt-2">
                 <div class="card-body">
-                    <span class="card-text">double bed design</span>
-                    <a href="" class="card-link">buy now</a>
+                    <h4 class="card-title"> HOUSE CHAIR DESIGN</h4>
+                    <span class="card-text">$ 200.00</span>
+                    <a href="" class="card-link position-absolute end-0 me-4" style="text-decoration: none;color: skyblue;">BUY NOW</a>
                 </div>
             </div>
         </div>
-
-        <div class="col-4  d-flex justify-content-center">
-            <div class="card w-75">
-                <img src="./chair.jpg" alt="" class="card-img-top" width="100px" height="150px">
-                <div class="card-body">
-                    <span class="card-text">house chair design</span>
-                    <a href="" class="card-link">gbuy now</a>
-                </div>
-            </div>
-        </div>
-
     </div>
 </div>
 
 <!-- -------------------------------------------- -->
  <br><br><br>
 <div>
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-4">
-            <img src="./sofa.jpg" alt="">
+    <div class="row container" id="about">
+        
+        <div class="col-4 container ms-5">
+            <img src="./images/sit2.jpg" alt="" >
         </div>
-        <div class="col-6 ms-5 mt-5">
+        <div class="col-1"></div>
+        <div class="col-6 mt-5">
             <h1><b>ABOUT US</b></h1>
             <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, accusantium, illo aspernatur aliquam quam sequi, <br>
                  dolorum mollitia odit numquam eum atque totam. Earum fugit mollitia, nisi repellendus modi neque odio! <br>
                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et adipisci deserunt earum consequatur aperiam a impedit nobis voluptatibus <br>
                   ut iure fugit sapiente, neque rem modi nesciunt quaerat sunt officia quis?
-            </span> <br>
-            <button class="btn text-light bg-info d-flex justify-content-center align-items-center">Read More</button>
+            </span> <br> 
+            <button class="btn text-light bg-info mt-3 w-25" >Read More</button>
         </div>
-        <div class="col-1"></div>
-
     </div>
 </div>
+<br><br>
 <!-- -------------------------------------------- -->
- <center>
- <div>
-
-    <center>
-        <h1><b>LATEST BLOG</b></h1>
-    </center>
+ 
+ <div class="container" id="latest">
+        <h1 class="text-center"><b>LATEST BLOG</b></h1>
+   <br><br>
    <br>
-    <div class="row ">
+    <div class="row container">
         
         <div class="col-4">
-            <div class="card w-75">
-                <img src="./chair.jpg" alt="" class="card-img-top" width="200px" height="150px">
+            <div class="card border shadow">
+                <img src="./images/2chair.jpeg" alt="" class="card-img-top" height="350px">
                 <div class="card-body">
-                    <h5 class="card-title"><b>LOOKS EVEN SLIGHLY BELIEVABLE. <br> IF YOU ARE</b></h5>
-                    <span class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero consectetur culpa assumenda debitis molestiae libero nisi vitae, <br>
-                         laudantium ipsum, excepturi ducimus, expedita nostrum modi ex tempora eaque accusamus? Saepe.</span> <br><br>
+                    <h5 class="card-title"><b>Looks even slightly believable. <br> if you are</b></h5>
+                    <span class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero consectetur culpa assumenda debitis molestiae libero nisi vitae <br></span> <br><br>
                     <a href="" class="card-link btn btn-info text-light">buy now</a>
+                    <br><br>
                 </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="card w-75">
-                <img src="./decore.jpg" alt="" class="card-img-top" width="200px" height="150px">
+        <div class="col-4 ">
+            <div class="card border shadow">
+                <img src="./images/decore.jpeg" alt="" class="card-img-top"  height="350px">
                 <div class="card-body">
-                    <h5 class="card-title"><b>LOOKS EVEN SLIGHLY BELIEVABLE. <br> IF YOU ARE</b></h5>
-                    <span class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero consectetur culpa assumenda debitis molestiae libero nisi vitae, <br>
-                         laudantium ipsum, excepturi ducimus, expedita nostrum modi ex tempora eaque accusamus? Saepe.</span> <br><br>
+                    <h5 class="card-title"><b>Anything embrassing. <br> hidden in the middle</b></h5>
+                    <span class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero consectetur culpa assumenda debitis molestiae libero nisi vitae <br></span> <br><br>
                     <a href="" class="card-link btn btn-info text-light">buy now</a>
+                    <br><br>
                 </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="card w-75">
-                <img src="./table.jpg" alt="" class="card-img-top" width="200px" height="150px">
+        <div class="col-4 ">
+            <div class="card border shadow">
+                <img src="./images/table.jpeg" alt="" class="card-img-top"  height="350px">
                 <div class="card-body">
-                    <h5 class="card-title"><b>LOOKS EVEN SLIGHLY BELIEVABLE. <br> IF YOU ARE</b></h5>
-                    <span class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero consectetur culpa assumenda debitis molestiae libero nisi vitae, <br>
-                         laudantium ipsum, excepturi ducimus, expedita nostrum modi ex tempora eaque accusamus? Saepe.</span> <br><br>
+                    <h5 class="card-title"><b>Molestians magni natus <br>dolores odio commodi. <br>Quaerat!</b></h5>
+                    <span class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis vero consectetur culpa assumenda debitis molestiae libero nisi vitae <br></span> <br><br>
                     <a href="" class="card-link btn btn-info text-light">buy now</a>
                 </div>
             </div>
@@ -213,11 +215,12 @@
         
     </div>
  </div>
-</center>
+
 <br><br><br>
 <!-- -------------------------------------------- -->
- <div class="row">
-    <h2 class="ms-5" style="font-weight: bolder;">CONTACT US</h2>
+ <div id="contact">
+ <div class="row" >
+    <h2  style="font-weight: bolder;margin-left: 140px;">CONTACT US</h2>
     <div class="col-1"></div>
     
     <div class="col-5">
@@ -235,15 +238,23 @@
             <label for="" class="form-label">Email</label>
         </div>
         <div class="form-floating mt-5">
-            <textarea name="" id="" style="height: 100px; width: 100%;"></textarea>
+            <textarea name="" id="" style="height: 80px; width: 100%;"></textarea>
             <label for="" class="form-label">Message</label>
+        </div> 
+        <button class="btn btn-info text-light w-25">Send</button> <br> <br> 
         </div>
-        <button class="btn btn-info text-light w-25">Send</button>
-        </div>
+
     </div>
-    <div class="col-5"><img src="./map2.jpg" alt="" width="100%" height="500px" style="margin-top: 50px;"></div>
+    <br>
+    <div class="col-5"><img src="./images/map.jpg" alt="" width="100%" height="500px" style="margin-top: 50px;"></div>
     <div class="col-1"></div>
  </div>
+</div>
+<br><br>
+<footer class="bg-info text-white text-center py-5">
+    <span>&copy; 2025 ALL RIGHTS RESERVED</span>
+</footer>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
